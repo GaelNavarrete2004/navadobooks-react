@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/navadobooks-react/static/css/main.89f54af0.css",
-    "main.js": "/navadobooks-react/static/js/main.a8faf716.js",
+    "main.js": "/navadobooks-react/static/js/main.c7cdfc15.js",
     "static/media/header.gif": "/navadobooks-react/static/media/header.e2bf89a820403751268c.gif",
     "static/media/CoverNotAvailable.jpg": "/navadobooks-react/static/media/CoverNotAvailable.d9b275a033e34a2695f6.jpg",
     "static/media/logoIMG.png": "/navadobooks-react/static/media/logoIMG.f074577ba11e04fb6b90.png",
     "index.html": "/navadobooks-react/index.html",
     "static/media/loader.svg": "/navadobooks-react/static/media/loader.a3343f12420f3160e32c5317638f2198.svg",
     "main.89f54af0.css.map": "/navadobooks-react/static/css/main.89f54af0.css.map",
-    "main.a8faf716.js.map": "/navadobooks-react/static/js/main.a8faf716.js.map"
+    "main.c7cdfc15.js.map": "/navadobooks-react/static/js/main.c7cdfc15.js.map"
   },
   "entrypoints": [
     "static/css/main.89f54af0.css",
-    "static/js/main.a8faf716.js"
+    "static/js/main.c7cdfc15.js"
   ]
 }
