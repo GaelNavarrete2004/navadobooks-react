@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-navadobooks/static/css/main.2798898b.css",
-    "main.js": "/react-navadobooks/static/js/main.eabee258.js",
-    "static/media/header.gif": "/react-navadobooks/static/media/header.e2bf89a820403751268c.gif",
-    "static/media/CoverNotAvailable.jpg": "/react-navadobooks/static/media/CoverNotAvailable.d9b275a033e34a2695f6.jpg",
-    "static/media/logoIMG.png": "/react-navadobooks/static/media/logoIMG.f074577ba11e04fb6b90.png",
-    "index.html": "/react-navadobooks/index.html",
-    "static/media/loader.svg": "/react-navadobooks/static/media/loader.a3343f12420f3160e32c5317638f2198.svg",
-    "main.2798898b.css.map": "/react-navadobooks/static/css/main.2798898b.css.map",
-    "main.eabee258.js.map": "/react-navadobooks/static/js/main.eabee258.js.map"
+    "main.css": "/navadobooks-react/static/css/main.89f54af0.css",
+    "main.js": "/navadobooks-react/static/js/main.68c8e9b2.js",
+    "static/media/header.gif": "/navadobooks-react/static/media/header.e2bf89a820403751268c.gif",
+    "static/media/CoverNotAvailable.jpg": "/navadobooks-react/static/media/CoverNotAvailable.d9b275a033e34a2695f6.jpg",
+    "static/media/logoIMG.png": "/navadobooks-react/static/media/logoIMG.f074577ba11e04fb6b90.png",
+    "index.html": "/navadobooks-react/index.html",
+    "static/media/loader.svg": "/navadobooks-react/static/media/loader.a3343f12420f3160e32c5317638f2198.svg",
+    "main.89f54af0.css.map": "/navadobooks-react/static/css/main.89f54af0.css.map",
+    "main.68c8e9b2.js.map": "/navadobooks-react/static/js/main.68c8e9b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.2798898b.css",
-    "static/js/main.eabee258.js"
+    "static/css/main.89f54af0.css",
+    "static/js/main.68c8e9b2.js"
   ]
 }
