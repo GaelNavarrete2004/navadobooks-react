@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Loading from "../Loader/Loader";
 import coverImg from "../../images/CoverNotAvailable.jpg";
 import "./BookDetails.css";
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const URL = "https://www.googleapis.com/books/v1/volumes/";
-const API_KEY = 'AIzaSyDzfiCMdEHjMAQL3KOzXd-7T989k5h6Tes';
+const API_KEY = "AIzaSyDzfiCMdEHjMAQL3KOzXd-7T989k5h6Tes";
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -25,15 +25,24 @@ const BookDetails = () => {
 
         if (data) {
           const volumeInfo = data.volumeInfo;
-          const { description, title, authors, publishedDate, categories, imageLinks } = volumeInfo;
+          const {
+            description,
+            title,
+            authors,
+            publishedDate,
+            categories,
+            imageLinks,
+          } = volumeInfo;
 
           const newBook = {
             description: description || "No description found",
             title: title || "Title not found",
             authors: authors ? authors.join(", ") : "Authors not found",
             publishedDate: publishedDate || "Date not found",
-            categories: categories ? categories.join(", ") : "No categories found",
-            cover_img: imageLinks ? imageLinks.thumbnail : coverImg, 
+            categories: categories
+              ? categories.join(", ")
+              : "No categories found",
+            cover_img: imageLinks ? imageLinks.thumbnail : coverImg,
           };
 
           setBook(newBook);
@@ -52,34 +61,38 @@ const BookDetails = () => {
   if (loading) return <Loading />;
 
   return (
-    <section className='book-details'>
-      <div className='container'>
-        <button type='button' className='flex flex-c back-btn' onClick={() => navigate("/book")}>
+    <section className="book-details">
+      <div className="container">
+        <button
+          type="button"
+          className="flex flex-c back-btn"
+          onClick={() => navigate("/navadobooks-react/book")}
+        >
           <FaArrowLeft size={22} />
-          <span className='fs-18 fw-6'>Go Back</span>
+          <span className="fs-18 fw-6">Go Back</span>
         </button>
 
-        <div className='book-details-content grid'>
-          <div className='book-details-img'>
+        <div className="book-details-content grid">
+          <div className="book-details-img">
             <img src={book?.cover_img} alt="cover img" />
           </div>
-          <div className='book-details-info'>
-            <div className='book-details-item title'>
-              <span className='fw-6 fs-24'>{book?.title}</span>
+          <div className="book-details-info">
+            <div className="book-details-item title">
+              <span className="fw-6 fs-24">{book?.title}</span>
             </div>
-            <div className='book-details-item description'>
-              <div dangerouslySetInnerHTML={{ __html: book?.description }} /> 
+            <div className="book-details-item description">
+              <div dangerouslySetInnerHTML={{ __html: book?.description }} />
             </div>
-            <div className='book-details-item'>
-              <span className='fw-6'>Authors: </span>
+            <div className="book-details-item">
+              <span className="fw-6">Authors: </span>
               <span>{book?.authors}</span>
             </div>
-            <div className='book-details-item'>
-              <span className='fw-6'>Published Date: </span>
+            <div className="book-details-item">
+              <span className="fw-6">Published Date: </span>
               <span>{book?.publishedDate}</span>
             </div>
-            <div className='book-details-item'>
-              <span className='fw-6'>Categories: </span>
+            <div className="book-details-item">
+              <span className="fw-6">Categories: </span>
               <span>{book?.categories}</span>
             </div>
           </div>

@@ -17,7 +17,7 @@ const Book = ({
         <img src={cover_img} alt="cover" />
       </div>
       <div className="book-item-info text-center">
-        <Link to={`/book/${id}`}>
+        <Link to={`/navadobooks-react/book/${id}`}>
           <div className="book-item-info-item title fw-7 fs-18">
             <span>{title}</span>
           </div>
